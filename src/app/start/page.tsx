@@ -38,7 +38,7 @@ function Page(props: Props) {
             </header>
             <div className='min-h-screen flex flex-col items-center gap-5 w-full lg:w-1/2 p-5'>
                 <h1 className='text-center better-text2 text-3xl lg:text-5xl font-bold flex flex-col'>
-                    <span>Hi, I'm Betty!</span>
+                    <span>Hi, I’m Betty!</span>
                     <span>What can I help you with?</span>
                 </h1>
                 <div className='inline-flex items-center gap-5 whitespace-nowrap rounded-xl text-medium font-semibold better-text2 leading-normal disabled:pointer-events-none disabled:opacity-50 transition-all ease-in-out duration-200 border border-teal-900 text-interactiveForegroundInversePrimary hover:shadow-accentBorderSecondary hover:border-teal-900 hover:shadow-[0_0_0_4px_inset] hover:shadow-teal-700 hover:text-interactivePrimary h-12 px-6 py-8 w-full lg:w-4/5 hover:text-teal-700 cursor-pointer'>
@@ -68,7 +68,7 @@ function Page(props: Props) {
                     </div>
                 </div>
                 <div className='better-text2 bg-green-50 rounded-lg p-8 text-gray-600 w-full lg:w-4/6 flex flex-col items-center justify-center my-10'>
-                    <h1 className='text-medium better-text2'>After a few questions, you'll unlock:</h1>
+                    <h1 className='text-medium better-text2'>After a few questions, you’ll unlock:</h1>
                     <ul className='text-medium p-5 better-text2 flex flex-col gap-3'>
                         <li className='flex gap-5'> <Svg1/> <span>Custom mortgage rates</span></li>
                         <li className='flex gap-5'> <AiOutlineDollarCircle size={20} style={{fontWeight:'bolder', color:'green'}}/> <span>Exclusive offers</span></li>
