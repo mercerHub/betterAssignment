@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
     <Navbar/>
-    <div className="h-auto">
-      <div className="absolute left-1/2 top-1/3 translate-x-[-50%] translate-y-[-50%] text-5xl md:text-[72px] lg:text-[118px] lg:mt-[10vh] font-semibold better-text2 text-[#1ee07f] w-3/5 text-center z-10">
+    <div className="h-auto lg:flex lg:flex-col lg:items-center lg:justify-center gap-0">
+      <div className="bg-teal-900 lg:bg-transparent p-0 w-screen lg:absolute lg:left-1/2 lg:top-1/3 lg:translate-x-[-50%] lg:translate-y-[-50%] text-5xl md:text-[72px] lg:text-[118px] lg:mt-[10vh] font-semibold better-text2 text-[#1ee07f] lg:w-3/5 text-center z-10 ">
         Mortgages made simple
       </div>
-      <section className="bg-teal-900 overflow-hidden flex justify-center pt-20 h-[115vh] section-1">
+      <section className="bg-teal-900 overflow-hidden flex flex-col lg:flex-row justify-center pt-20 h-[115vh] section-1 w-screen">
         <div className="flex justify-center flex-col p-5 mt-20 items-center">
           <div className="text-black py-4 px-10 rounded-full text-center bg-[#1ee07f] hover:cursor-pointer hover:bg-transparent hover:text-white transition-all ease-in-out delay-200 duration-300">
             Start my approval
@@ -40,7 +40,7 @@ export default function Home() {
             priority
           />
         </div>
-        <div className="flex flex-col py-4 px-10 gap-1 mt-20 items-center justify-center">
+        <div className="lg:flex lg:flex-col py-4 px-10 gap-1 mt-20 items-center justify-center hidden">
           <div className="text-yellow-400 flex item-center gap-1 text-2xl">
             <FcGoogle size={30} />
             <FaStar />
@@ -59,8 +59,8 @@ export default function Home() {
 
       </section>
       <section className="max-w-screen min-h-screen bg-white p-5 section-2">
-        <div className="flex h-full min-h-screen items-center justify-center gap-2 p-2">
-          <div className="flex flex-col w-1/2 p-2 gap-2 pl-10 ml-10 items-center justify-center pt-10">
+        <div className="flex flex-col lg:flex-row h-full min-h-screen items-center justify-center gap-2 p-2">
+          <div className="flex flex-col w-screen lg:w-1/2 p-2 gap-2 pl-10 ml-10 items-center justify-center pt-10">
             <div className="overflow-hidden max-h-3/5 rounded-xl mt-8">
               <Image
                 id={`${active}`}
@@ -100,9 +100,9 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="text-stone-800 w-1/2 p-5 m-5">
-            <h2 className="lg:text-[80px] font-bold p-5 mx-5 tracking-tighter better-text1 leading-none">Find out why we’re better.</h2>
-            <div className="border rounded-full w-1/3 p-5 mx-10 text-center bg-teal-900 text-white font-semibold cursor-pointer hover:bg-teal-600 transition-all ease-in-out duration-150">See all stories</div>
+          <div className="text-stone-800 w-screen lg:w-1/2 p-5 m-5 lg:flex flex-col items-center">
+            <h2 className="lg:text-[80px] font-bold p-5 mx-5 tracking-tighter better-text1 leading-none text-center">Find out why we’re better.</h2>
+            <div className="border rounded-full lg:w-1/3 p-5 mx-10 text-center bg-teal-900 text-white font-semibold cursor-pointer hover:bg-teal-600 transition-all ease-in-out duration-150">See all stories</div>
             <div className="px-5 mx-10 mb-2xl flex gap-2 items-center justify-center gap-sm leading-small text-textSecondary md:justify-start">
               <MdOutlineStar color="#1ee07f" size={20}/>
               <span><strong>Excellent</strong></span><span><strong>4.3</strong> out of 5</span></div>
